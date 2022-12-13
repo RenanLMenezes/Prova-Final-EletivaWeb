@@ -16,7 +16,7 @@ export class ToDoComponent implements OnInit {
 
   ngOnInit(): void {
     this.todoService.getToDos()
-      .subscribe(todo => this.todo = todo)
+      .subscribe(todo => this.todo = todo);
   }
 
 }

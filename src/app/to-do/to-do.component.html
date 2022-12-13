@@ -1,13 +1,16 @@
 <div>
     <table>
         <tr>
+            <th>UserId</th>
             <th>Id</th>
-            <th>Name</th>
-            <th>UserName</th>
-            <th>Email</th>
+            <th>Title</th>
+            <th>Completed</th>
         </tr>
         <tr *ngFor="let ToDos of todo">
-
+            <td>{{ToDos.userId}}</td>
+            <td>{{ToDos.id}}</td>
+            <td>{{ToDos.title}}</td>
+            <td><input type="checkbox" name="" id=""[checked]="ToDos.completed"/></td>
         </tr>
     </table>
 </div>
